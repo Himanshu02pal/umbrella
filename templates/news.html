@@ -1,0 +1,310 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8" />
+<title>Sec</title>
+<link rel="stylesheet" href="{%static 'css/style.css' %}" />
+<script src="{% static '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %}"></script>
+<script src="{%static 'js/functions.js' %}"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div class="wrapper wrapper--header wrapper--header--subpage">
+  <div class="content">
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="{%static 'images/logo_top.png' %}" alt="Kids Umbrella">
+        </a>
+      </div>
+      <div id="menuRWD">
+        <div class="rwdMenuIcon"></div>
+      </div>
+      <ul id="ulRwd">
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>     
+      </ul>
+      <div id="header_navigation">
+        <div id="menu">
+          <img src="{%static 'images/icons_menu.png' %}" alt="">
+          <nav id="nav_top">
+            <ul>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="lang">
+          <span>En</span>
+          <ul>
+            <li><a href="#">DE</a></li>
+            <li><a href="#">PL</a></li>
+          </ul>
+        </div>
+
+        <div id="login">
+          <a href="#" class="button_login">login</a>
+        </div>
+
+        <div id="social">
+          <a href="#">
+            <img src="{%static 'images/icons_facebook.png' %}" alt="">
+          </a>
+          <a href="#">
+            <img src="{%static 'images/icons_twitter.png' %}" alt="">
+          </a>
+        </div>
+
+        <div id="search">
+          <div class="lupa">
+            <img src="{%static 'images/icons_search.png' %}" alt="search">
+          </div>
+          <form action="#">
+            <input type="text" name="search">
+          </form>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="content">
+    <div class="colLeft">
+      <section id="news">
+        <header>
+          <h2>LATEST NEWS</h2>
+        </header>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+      </section>
+      <section id="pagination">
+        <ul>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="colRight">
+      <div class="becomeAMember">
+        <a href="#" class="become">BECOME A MEMBER</a>
+        <h3>and see our trainings!</h3>
+      </div>
+
+      <div id="videoRight">
+        <article class="video">
+          <figure>
+            <img src="{%static 'images/video.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </section>
+        </article>
+        <article class="video">
+          <figure>
+            <img src="{%static 'images/video.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </section>
+        </article>
+      </div>
+      
+      <div id="ourFallowers">
+        <h2>OUR FALLOWERS</h2>
+        <div class="ourFallowersBox">
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper--footer"> 
+  <div class="content">
+    <div class="contentInner">
+      <div class="footerLeftBox">
+        <div id="logoFooter">
+          <img src="{%static 'images/logo_bottom_bigger.png' %}" alt="Kids Umbrella">
+        </div>
+
+        <div id="menuBottom">
+          <nav>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+             <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+             <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+             <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="social2">
+          <a href="#"><img src="{%static 'images/icons_t_grey.png' %}" alt=""></a>
+          <a href="#"><img src="{%static 'images/icons_f_grey.png' %}" alt=""></a>
+        </div>
+      </div>
+
+      <div id="formFooter">
+        <h3>CONTACT US</h3>
+        <form action="#">
+          <input type="text" name="e-mail" placeholder="E-mail">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+
+      <div id="copy">
+        copyright 2014 Umbrella KID's NGO. All rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

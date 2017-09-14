@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8" />
+<title>Sec</title>
+<link rel="stylesheet" href="{% static 'css/style.css'%}" />
+<script src="{% static '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %}"></script>
+<script src="{% static 'js/functions.js' %}"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<script src="{% static  'js/bxslider-4-master/jquery.bxslider.min.js'%}"></script>
+<!-- bxSlider CSS file -->
+<link href="{% static 'js/bxslider-4-master/jquery.bxslider.css' %}" rel="stylesheet" />
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: false,
+      captions: true,
+      responsive: true,
+      slideWidth: '1235',
+      pause: 6000,
+      pages: true,
+    });
+  });
+</script>
+<link rel="stylesheet" href="{% static 'js/owl-carousel/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'js/owl-carousel/owl.theme.css' %}">
+<script src="{% static 'js/owl-carousel/owl.carousel.js' %}"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#owl-example").owlCarousel({
+      items: 4,
+
+      itemsMobile: 1,
+      responsive: true,
+      responsiveRefreshRate : 200,
+      responsiveBaseWidth: window,
+      navigation : false,
+      navigationText : ["prev","next"],
+      rewindNav : true,
+      scrollPerPage : true,
+    });
+
+    var owl = $("#owl-example");
+
+    $(".next").click(function(){
+      owl.trigger('owl.next');
+    })
+    $(".prev").click(function(){
+      owl.trigger('owl.prev');
+    })
+  });
+</script>
+</head>
+<body>
+<div class="wrapper wrapper--header membersW">
+  <div class="content">
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="{%static 'images/logo_top.png' %}" alt="Kids Umbrella">
+        </a>
+      </div>
+      <div id="menuRWD">
+        <div class="rwdMenuIcon"></div>
+      </div>
+      <ul id="ulRwd">
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>     
+      </ul>
+      <div id="header_navigation">
+        <div id="menu">
+          <img src="{%static 'images/icons_menu.png' %}" alt="">
+          <nav id="nav_top">
+            <ul>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="lang">
+          <span>En</span>
+          <ul>
+            <li><a href="#">DE</a></li>
+            <li><a href="#">PL</a></li>
+          </ul>
+        </div>
+
+        <div id="login">
+          <a href="#" class="button_login">login</a>
+        </div>
+
+        <div id="social">
+          <a href="#">
+            <img src="{%static 'images/icons_facebook.png' %}" alt="">
+          </a>
+          <a href="#">
+            <img src="{%static 'images/icons_twitter.png' %}" alt="">
+          </a>
+        </div>
+
+        <div id="search">
+          <div class="lupa">
+            <img src="{%static 'images/icons_search.png' %}" alt="search">
+          </div>
+          <form action="#">
+            <input type="text" name="search">
+          </form>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+<div class="wrapper wrapper--members">
+  <div class="content content--sponsored">
+    <h1><img src="{%static 'images/lately_sponsored_kids_title_PRISTINA_FONT.png' %}" alt="lately sponsored kids"></h1>
+
+    <div id="owl-example" class="owl-carousel">
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+      <div class="memberCarousel">
+        <a href="#">
+          <div class="avatar">
+            <img src="{%static 'images/kids_1.png' %}" alt="">
+          </div>
+        </a>
+        <p>Lisa, 5 yo</p>
+        <p>Location:</p>
+        <p>Last communicated: 3, may 14</p>
+        <a href="#" class="ml"><img src="{%static 'images/sendmessage_grey.png' %}" alt=""> message</a>
+        <a href="#" class="vr"><img src="{%static 'images/videocall_grey.png' %}" alt=""> video call</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="content content--sponsored_list">
+    <h2 class="all">All sponsored Kids</h2>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="leftC">
+        <img src="{%static 'images/baby.png' %}" alt="" class="avatarM">
+        <a href="#" class="buttonMember"><img src="{%static 'images/sendmessage_white.png' %}" alt=""> message</a>
+        <a href="#" class="buttonMember"><img src="{%static 'images/videocall_white.png' %}" alt=""> video call</a>
+      </div>
+      <div class="rightC">
+        <p class="pBold">Jeremy, 9 month</p>
+        <p>Location:</p>
+        <p>Last communicated:</p>
+        <p>Additional Info:</p>
+      </div>
+    </div>
+    <section id="pagination" class="textCenter">
+      <ul>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+<div class="wrapper wrapper--footer"> 
+  <div class="content">
+    <div class="contentInner">
+      <div class="footerLeftBox">
+        <div id="logoFooter">
+          <img src="{%static 'images/logo_bottom_bigger.png' %}" alt="Kids Umbrella">
+        </div>
+
+        <div id="menuBottom">
+          <nav>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+             <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+             <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+             <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="social2">
+          <a href="#"><img src="{%static 'images/icons_t_grey.png' %}" alt=""></a>
+          <a href="#"><img src="{%static 'images/icons_f_grey.png' %}" alt=""></a>
+        </div>
+      </div>
+
+      <div id="formFooter">
+        <h3>CONTACT US</h3>
+        <form action="#">
+          <input type="text" name="e-mail" placeholder="E-mail">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+
+      <div id="copy">
+        copyright 2014 Umbrella KID's NGO. All rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

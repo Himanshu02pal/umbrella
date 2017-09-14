@@ -1,0 +1,371 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8" />
+<title>Sec</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<script src="{% static '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %}"></script>
+<script src="{% static 'js/functions.js'%}"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<script src="{% static 'js/bxslider-4-master/jquery.bxslider.min.js'%}"></script>
+<!-- bxSlider CSS file -->
+<link href="{% static 'js/bxslider-4-master/jquery.bxslider.css' %}" rel="stylesheet" />
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: false,
+      captions: true,
+      responsive: true,
+      slideWidth: '1235',
+      pause: 6000,
+      pages: true,
+    });
+  });
+</script>
+</head>
+<body>
+<div class="wrapper wrapper--header">
+  <div class="content">
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="{% static 'images/logo_top.png'%}" alt="Kids Umbrella">
+        </a>
+      </div>
+      <div id="menuRWD">
+        <div class="rwdMenuIcon"></div>
+      </div>
+      <ul id="ulRwd">
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>
+        <li><a href="#">Link Link</a></li>     
+      </ul>
+      <div id="header_navigation">
+        <div id="menu">
+          <img src="{%static 'img/logo_top.png' %}" alt="">
+          <nav id="nav_top">
+            <ul>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+              <li><a href="#">Link Link</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="lang">
+          <span>En</span>
+          <ul>
+            <li><a href="#">DE</a></li>
+            <li><a href="#">PL</a></li>
+          </ul>
+        </div>
+
+        <div id="login">
+          <a href="#" class="button_login">login</a>
+        </div>
+
+        <div id="social">
+          <a href="#">
+            <img src="{% static 'images/icons_facebook.png'%}" alt="">
+          </a>
+          <a href="#">
+            <img src="{% static 'images/icons_twitter.png'%}" alt="">
+          </a>
+        </div>
+
+        <div id="search">
+          <div class="lupa">
+            <img src="{% static 'images/icons_search.png' %}" alt="search">
+          </div>
+          <form action="#">
+            <input type="text" name="search">
+          </form>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="content content--slider">
+    <ul class="bxslider">
+      <li><img src="{%static 'images/banner_img.png' %}" title="<p>asd</p>Lorem ipsum, consectetur adipisicing elit. "/></li>
+      <li><img src="{%static 'images/banner_img.png' %}" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "/></li>
+      <li><img src="{%static 'images/banner_img.png' %}" title="Lorem ipsum dolor sit amet, adipisicing elit. "/></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="content">
+    <div class="colLeft">
+      <section id="about">
+        <article>
+          <header>
+            <h2>ABOUT UMBRELLA KID'S NGO</h2>
+          </header>
+          <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </article>
+      </section>
+
+      <section id="news">
+        <header>
+          <h2>LATEST NEWS</h2>
+        </header>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+        <article class="homeNews">
+          <header>
+            <h3>Lorem ipsum dolor sit amet <time datetime="2009-11-13">13, November</sup></h3>
+          </header>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <a href="#" class="readMore">Read more...</a>
+          </section>
+        </article>
+      </section>
+
+      <section id="our_members">
+        <header>
+          <h2>OUR MEMBERS</h2>
+        </header>
+        <article class="our_member">
+          <figure>
+            <img src="{%static 'images/img1.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          </section>
+        </article>
+        <article class="our_member">
+          <figure>
+            <img src="{%static 'images/img1.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          </section>
+        </article>
+      </section>
+
+      <section id="story">
+        <header>
+          <h2>STORY OF THE DAY</h2>
+        </header>
+        <section>
+          <figure>
+            <img src="{%static 'images/img3.png' %}" alt="">
+            <p>Lorem ipsum dolor sit amet</p>
+          </figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+          <p class="blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+          <p class="blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+          <p class="autor">By Lorem ipsum</p>
+          <a href="#" class="otherStories">OTHER STORIES</a>
+        </section>
+      </section>
+    </div>
+    <div class="colRight">
+      <div class="becomeAMember">
+        <a href="#" class="become">BECOME A MEMBER</a>
+        <h3>and see our trainings!</h3>
+      </div>
+
+      <div id="videoRight">
+        <article class="video">
+          <figure>
+            <img src="{%static 'images/video.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </section>
+        </article>
+        <article class="video">
+          <figure>
+            <img src="{%static 'images/video.png' %}" alt="">
+          </figure>
+          <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </section>
+        </article>
+      </div>
+      
+      <div id="ourFallowers">
+        <h2>OUR FALLOWERS</h2>
+        <div class="ourFallowersBox">
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+          <div class="fallower">
+            <a href="#">
+              <img src="{%static 'images/fallower.png' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="ourGallery">
+          <a href="#" class="ourGalleryA">See our gallery</a>
+          <div class="gallery">
+            <div class="pic">
+              <a href="#">
+                <img src="{%static 'images/img2.png' %}" alt="">
+              </a>
+            </div>
+            <div class="pic">
+              <a href="#">
+                <img src="{%static 'images/img2.png' %}" alt="">
+              </a>
+            </div>
+            <div class="pic">
+              <a href="#">
+                <img src="{%static 'images/img2.png' %}" alt="">
+              </a>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper--footer"> 
+  <div class="content">
+    <div class="contentInner">
+      <div class="footerLeftBox">
+        <div id="logoFooter">
+          <img src="{%static 'images/logo_bottom_bigger.png' %}" alt="Kids Umbrella">
+        </div>
+
+        <div id="menuBottom">
+          <nav>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+             <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+             <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+           <ul>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+             <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+            <ul>
+             <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="social2">
+          <a href="#"><img src="{%static 'images/icons_t_grey.png' %}" alt=""></a>
+          <a href="#"><img src="{%static 'images/icons_f_grey.png' %}" alt=""></a>
+        </div>
+      </div>
+
+      <div id="formFooter">
+        <h3>CONTACT US</h3>
+        <form action="#">
+          <input type="text" name="e-mail" placeholder="E-mail">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+
+      <div id="copy">
+        copyright 2014 Umbrella KID's NGO. All rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
